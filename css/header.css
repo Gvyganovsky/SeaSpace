@@ -1,0 +1,285 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+.header {
+    background-image: url("../assets/Rectangle 23.png");
+    background-repeat: no-repeat;
+    min-height: 100hv;
+    background-size: cover;
+}
+
+.header-other {
+    background-color: #133D8D;
+    max-height: 190px;
+}
+
+.header-logo {
+    width: 60px;
+    height: 60px;
+}
+
+.header-nav {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 25px 8px 100px;
+}
+
+.header-nav-other {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 25px 8px;
+}
+
+.header-title {
+    font-size: 24px;
+    font-weight: 600;
+    color: white;
+    font-family: 'Roboto', sans-serif;
+}
+
+.header-contact {
+    display: flex;
+}
+
+.header-contact .header-text:first-child {
+    margin-right: 20px;
+}
+
+.header_info {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: 25px;
+    border-bottom: 1px solid darkgray;
+}
+
+.header-text {
+    font-size: 14px;
+    text-align: center;
+    color: white;
+}
+
+
+
+
+
+
+  .navbar {
+    display: flex;
+    align-items: center;
+  }
+  
+  .menu {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+  }
+  
+  .menu li {
+    margin-right: 10px;
+  }
+  
+  .burger-menu {
+    display: none;
+    cursor: pointer;
+  }
+  
+  .burger-icon {
+    width: 24px;
+    height: 24px;
+  }
+
+.menu {
+    margin-top: 25px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.menu a {
+    font-weight: 700;
+    font-size: 14px;
+    color: white;
+}
+
+.header-block {
+    margin-top: 120px;
+}
+
+.header-block_title {
+    max-width: 640px;
+    font-size: 60px;
+    font-family: 'Roboto', sans-serif;
+    color: white;
+    line-height: 62px;
+}
+
+.header-block_text {
+    max-width: 660px;
+    border-left: 1px solid white;
+    padding-left: 24px;
+    margin-top: 30px;
+    color: white;
+    line-height: 24px;
+}
+
+.header-button_block {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header-but {
+    padding: 15px 30px 14px;
+    width: 180px;
+    height: 60px;
+    background-color: #BD0007;
+    border: 0;
+    border-radius: 2px;
+    margin-top: 50px;
+    font-weight: 700;
+    font-size: 16px;
+    color: white;
+    cursor: pointer;
+}
+
+.square-block {
+    display: flex;
+    margin-top: 130px;
+}
+
+.square {
+    width: 60px;
+    height: 60px;
+    background-color: #133D8D;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+.square:first-child {
+    margin-right: 20px;
+}
+
+.square img {
+    width: 9.25px;
+    height: 15px;
+}
+
+.header-shadowBlock {
+    padding: 30px 35px 35px;
+    max-width: 540px;
+    max-height: 160px;
+    background: rgba(51, 51, 51, 0.3);
+    opacity: .9;
+}
+
+.header-shadowBlock_title {
+    font-weight: 700;
+    font-size: 14px;
+    color: white;
+}
+
+.header-shadowBlock_textImg {
+    display: flex;
+    margin-top: 26px;
+    align-items: center;
+}
+
+.header-shadowBlock_textBlock p {
+    margin-bottom: 16px;
+    color: white;
+}
+
+.header-shadowBlock_textImg img {
+    margin-left: 26px;
+}
+
+.fade-out {
+    opacity: 0;
+    transition: opacity 0.5s ease;
+}
+
+
+@media screen and (max-width: 700px) {
+    .header-other {
+        max-height: none;
+    }
+
+    .header {
+        background-image: url("../assets/Rectangle 23.png");
+        background-size: cover;
+        background-position: center center;
+    }
+
+    .header-block_text {
+        max-width: none;
+        margin-left: 8px;
+    }
+
+    .menu {
+        display: none;
+      }
+
+      .header-block {
+        margin-top: 60px;
+      }
+    
+      .burger-menu {
+        display: block;
+      }
+    
+      .menu.open {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+      }
+
+      .menu.open li {
+        margin-bottom: 12px;
+      }
+
+      .header-button_block {
+        display: block;
+      }
+
+      .header-shadowBlock {
+        margin-top: 12px;
+      }
+
+      .square-block {
+        justify-content: center;
+      }
+
+      .header-shadowBlock_textBlock p {
+        margin-bottom: 16px;
+        line-height: 24px;
+    }
+
+    .header-shadowBlock {
+        max-height: none;
+    }
+
+    .header-shadowBlock_textImg {
+        display: block;
+    }
+
+    .header-block_title {
+        font-size: 38px;
+        text-align: center;
+    }
+
+    .header-button_first {
+        display: grid;
+        justify-content: center;
+    }
+
+    .square-block {
+        margin-top: 24px;
+    }
+
+    .header-logo {
+        display: none;
+    }
+}
